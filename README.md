@@ -1,48 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ATS Project</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1, h2, h3, h4 {
-      color: #2c3e50;
-    }
-    pre {
-      background: #f4f4f4;
-      padding: 10px;
-      border: 1px solid #ccc;
-      overflow: auto;
-    }
-    code {
-      background: #f4f4f4;
-      padding: 2px 4px;
-      font-size: 90%;
-      color: #c7254e;
-    }
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
-  <h1>Candidate ATS API</h1>
+  <h1> ATS Project API</h1>
   <p>
     Candidate ATS API is a Django REST Framework based API that serves as an Applicant Tracking System (ATS) for recruiters.
     It provides endpoints to create, update, delete, list, and search candidates, allowing recruiters to efficiently manage job applications.
@@ -70,8 +31,8 @@
   <ol>
     <li>
       <strong>Clone the Repository:</strong>
-      <pre><code>git clone https://github.com/yourusername/candidate-ats-api.git
-cd candidate-ats-api</code></pre>
+      <pre><code>git clone https://github.com/nandannsr/Aviate_machineTask.git
+cd Aviate_machineTask</code></pre>
     </li>
     <li>
       <strong>Create and Activate a Virtual Environment:</strong>
@@ -93,13 +54,14 @@ env\Scripts\activate</code></pre>
       <strong>Database:</strong> By default, Django uses SQLite. To switch to PostgreSQL or another database, update the <code>DATABASES</code> setting in your <code>settings.py</code>.
     </li>
     <li>
-      <strong>Environment Variables:</strong> Configure settings like <code>SECRET_KEY</code>, <code>DEBUG</code>, and other project-specific settings using environment variables or a <code>.env</code> file.
+      <strong>Environment Variables:</strong> Configure settings <code>SECRET_KEY</code>, <code>DEBUG</code> in a <code>.env</code> file.
     </li>
   </ul>
 
   <h2>Migrations</h2>
   <p>Set up your database schema with the following commands:</p>
-  <pre><code>python manage.py makemigrations
+  <pre><code>cd ats_project
+  python manage.py makemigrations
 python manage.py migrate</code></pre>
 
   <h2>Running the Server</h2>
@@ -137,26 +99,9 @@ python manage.py migrate</code></pre>
     </li>
   </ul>
 
-  <h3>Swagger Documentation</h3>
-  <ul>
-    <li><strong>Swagger UI:</strong> Visit <code>http://localhost:8000/swagger/</code> for interactive API documentation and testing.</li>
-    <li><strong>ReDoc:</strong> Alternatively, view the API docs at <code>http://localhost:8000/redoc/</code>.</li>
-  </ul>
-
-  <h2>Project Structure</h2>
-  <ul>
-    <li><code>models.py</code> – Contains the <code>Candidate</code> model definition.</li>
-    <li><code>serializers.py</code> – Serializers for converting models to JSON.</li>
-    <li><code>views.py</code> – API viewsets, including the custom search action.</li>
-    <li><code>services.py</code> – Business logic (e.g., optimized search queries).</li>
-    <li><code>urls.py</code> – URL routing configuration.</li>
-    <li><code>requirements.txt</code> – Lists all project dependencies.</li>
-  </ul>
-
   <h2>Testing the API</h2>
   <p>You can test the API endpoints using:</p>
   <ul>
-    <li>The interactive Swagger UI.</li>
     <li>API clients like Postman or cURL.</li>
   </ul>
 
