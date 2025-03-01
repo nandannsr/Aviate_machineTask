@@ -14,8 +14,6 @@
     <li><strong>CRUD Operations:</strong> Create, retrieve, update, and delete candidate records.</li>
     <li><strong>Custom Search:</strong> Search candidate names with relevance scoring.</li>
     <li><strong>Pagination:</strong> Efficiently handle large data sets with paginated responses.</li>
-    <li><strong>Swagger Documentation:</strong> Interactive API docs for testing and exploration.</li>
-    <li><strong>Optimized ORM Queries:</strong> Use Django's ORM to filter and annotate queries for performance.</li>
   </ul>
 
   <h2>Prerequisites</h2>
